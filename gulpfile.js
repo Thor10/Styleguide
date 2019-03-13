@@ -76,7 +76,7 @@ gulp.task('purgeCSS', function () {
 // Clean first, then the rest
 gulp.task('build', function (callback) {
     runSequence(
-        // 'clean:dist',
+        'clean:dist',
         ['useref', 'static'],
         // ['useref', 'static', 'purgeCSS'],
         ['cacheBuster'],
