@@ -116,52 +116,23 @@ a{
     position: relative;
     color: inherit;
     font-weight: inherit;
-    padding: 0 2px;
     color: inherit;
     box-sizing: border-box;
-
-    &:before{
-        content: '';
-        width: 80%;
-        height: 0.95px;
-        position: absolute;
-        left: 10%;
-        height: 0;
-        border-bottom: 1.5px solid fade(@primary_dark, 80%);
-        z-index: -1;
-        bottom: -2px;
-        transition: @transition_fast;
-    }
+    border-bottom: 1px solid @primary_darker;
+    transition: @transition;
 
     &:hover{
-        transition: @transition_fast;
-
-        &:before{
-            width: 96%;
-            left: 2%;
-            border-bottom: 1.5px solid @primary;
-            transition: @transition_fast;
-        }
+        transition: @transition;
+        border-color: @ink;
+        color: @ink_darker;
     }
     &:focus{
         transition: @transition_fast;
-        
-        &:before{
-            width: 96%;
-            left: 2%;
-            border-bottom-style: dotted;
-            transition: @transition_fast;
-        }
+        outline: 2px dotted @grey;
     }
     &:active{
         transition: @transition_fast;
-        
-        &:before{
-            width: 0%;
-            left: 50%;
-            border: 1px solid @primary;
-            transition: @transition_fast;
-        }
+        opacity: 0.7;
     }
 }
 
