@@ -3039,12 +3039,14 @@ a {
   font-weight: inherit;
   color: inherit;
   box-sizing: border-box;
-  border-bottom: 1px solid #00ed63;
+  text-decoration: underline;
+  text-decoration-color: #00ed63;
   transition: 0.15s;
+  letter-spacing: -0.2px;
 }
 a:hover {
   transition: 0.15s;
-  border-color: #212B36;
+  text-decoration-color: #212B36;
   color: #0a0d10;
 }
 a:focus {
@@ -3053,7 +3055,7 @@ a:focus {
 }
 a:active {
   transition: 0.05s;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .subdued {
   opacity: 0.65;
